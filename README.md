@@ -7,6 +7,17 @@ Sistema de facturación profesional construido con **FastAPI + React + PostgreSQ
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?style=for-the-badge&logo=postgresql)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker)
 
+## 📸 Capturas
+
+![Login](screenshots/Login.png)
+![Dashboard](screenshots/Dashboard.png)
+![Listadefacturas](screenshots/Listadefacturas.png)
+![Clientes](screenshots/Clientes.png)
+![Productos](screenshots/Productos.png)
+![Detalledefactura](screenshots/Detalledefactura.png)
+![PDFgenerado](screenshots/PDFgenerado.png)
+
+
 ## ✨ Características
 
 - 🔐 **Autenticación JWT** — registro, login, rutas protegidas
