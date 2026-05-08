@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body {
+    background-color: #0a0c10;
+    color: #e8eaf0;
+    font-family: 'Syne', sans-serif;
+    margin: 0;
+  }
+  ::-webkit-scrollbar { width: 4px; height: 4px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: #1e2330; border-radius: 2px; }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-border rounded-xl;
+  }
+  .btn {
+    @apply inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold
+           transition-all duration-150 cursor-pointer border-none font-sans;
+  }
+  .btn-primary {
+    @apply bg-accent text-black hover:brightness-110 hover:-translate-y-px;
+  }
+  .btn-ghost {
+    @apply bg-surface text-[#e8eaf0] border border-border hover:bg-surface2;
+  }
+  .btn-danger {
+    @apply bg-danger/10 text-danger border border-danger/30 hover:bg-danger/20;
+  }
+  .input {
+    @apply w-full bg-surface2 border border-border rounded-lg px-3 py-2 text-sm
+           text-[#e8eaf0] outline-none font-sans
+           focus:border-accent focus:ring-1 focus:ring-accent/30
+           placeholder:text-muted transition-colors;
+  }
+  .label {
+    @apply text-xs font-semibold text-muted uppercase tracking-wider mb-1 block;
+  }
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-bold;
+  }
+  .badge::before {
+    content: '';
+    @apply w-1.5 h-1.5 rounded-full bg-current;
+  }
+  .badge-paid    { @apply bg-accent/10 text-accent; }
+  .badge-issued  { @apply bg-warn/10 text-warn; }
+  .badge-draft   { @apply bg-muted/20 text-muted; }
+  .badge-overdue { @apply bg-danger/10 text-danger; }
+  .badge-cancelled { @apply bg-muted/15 text-muted line-through; }
+  .table-row {
+    @apply border-b border-border hover:bg-white/[0.02] cursor-pointer transition-colors;
+  }
+  .th {
+    @apply text-xs font-semibold text-muted uppercase tracking-widest py-3 px-4 text-left
+           bg-white/[0.02] border-b border-border;
+  }
+  .td { @apply py-3 px-4 text-sm; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeUp { animation: fadeUp 0.35s ease both; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+.spinner {
+  @apply w-5 h-5 border-2 border-border border-t-accent rounded-full;
+  animation: spin 0.7s linear infinite;
+}
