@@ -10,7 +10,7 @@ Sistema de facturación profesional construido con **FastAPI + React + PostgreSQ
 ## 📸 Capturas
 
 ![Login](screenshots/Login.png)
-![Dashboard](screenshots/Dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 ![Listadefacturas](screenshots/Listadefacturas.png)
 ![Clientes](screenshots/Clientes.png)
 ![Productos](screenshots/Productos.png)
