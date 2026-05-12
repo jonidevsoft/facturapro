@@ -17,6 +17,8 @@ Sistema de facturación profesional construido con **FastAPI + React + PostgreSQ
 ![Detalledefactura](screenshots/Detalledefactura.png)
 ![PDFgenerado](screenshots/PDFgenerado.png)
 
+## 🎥 Demo en video
+[![Ver Demo](screenshots/dashboard.png)](https://go.screenpal.com/watch/cOhleontqyf)
 
 ## ✨ Características
 
