@@ -125,14 +125,6 @@ COMPANY_NAME=Mi Empresa SAS
 COMPANY_NIT=900123456-7
 ```
 
-## 🛠️ Tecnologías
-
-**Backend:** FastAPI · SQLAlchemy · Alembic · Pydantic v2 · ReportLab · python-jose · passlib
-
-**Frontend:** React 18 · Vite · Tailwind CSS · React Query · React Router · Recharts
-
-**Infraestructura:** PostgreSQL 16 · Docker Compose
-
 ## 📄 Licencia
 
 MIT — libre para uso personal y comercial.
